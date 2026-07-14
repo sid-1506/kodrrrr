@@ -45,22 +45,20 @@ nav {
     font-size: 2rem;
     font-weight: 700;
     color: #1d4ed8;
-
-
-
 }
 
 .nav-links {
     display: flex;
     gap: 35px;
     list-style: none;
+    margin-top: 12px;
+    /* slightly drops nav links down */
 }
 
 .nav-links a {
     text-decoration: none;
     color: #444;
     font-size: 18px;
-
     transition: .3s;
 }
 
@@ -75,10 +73,12 @@ nav {
     padding: 14px 34px;
     border-radius: 12px;
     text-decoration: none;
-    background: #1d4ed8;
-    color: #fff;
+    background: none;
+    color: #1d4ed8;
     font-weight: 600;
     transition: .3s;
+    margin-bottom: 6px;
+    /* button sits slightly lower */
 }
 
 .btn-primary:hover {
@@ -96,13 +96,14 @@ nav {
     display: inline-block;
     padding: 8px 20px;
     border-radius: 30px;
-    background: #dbeafe;
+    background: none;
     color: #1d4ed8;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 2px;
-    
     text-transform: uppercase;
+    margin-left: 40px;
+    /* tag is off-center */
 }
 
 .hero h1 {
@@ -110,15 +111,21 @@ nav {
     line-height: 1.1;
     margin: 30px 0;
     font-weight: 700;
+    letter-spacing: -1px;
 }
 
 .hero h1 span {
     color: #1d4ed8;
+    display: block;
+    /* breaks to next line awkwardly */
+    margin-top: -8px;
 }
 
 .hero p {
     max-width: 750px;
     margin: auto;
+    margin-left: 60px;
+    /* paragraph is left-shifted */
     font-size: 22px;
     line-height: 1.7;
     color: #555;
@@ -129,6 +136,15 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    align-items: flex-end;
+    /* buttons at different heights */
+}
+
+.hero-buttons .btn-primary {
+    margin-bottom: 0;
+    position: relative;
+    top: 8px;
+    /* primary button is lower than secondary */
 }
 
 .btn-secondary {
@@ -141,6 +157,8 @@ nav {
     color: #222;
     font-weight: 600;
     transition: .3s;
+    border-radius: 4px;
+    /* inconsistent border-radius vs btn-primary */
 }
 
 .btn-secondary:hover {
@@ -156,4 +174,3 @@ nav {
     border-radius: 30px;
     display: block;
 }
-
